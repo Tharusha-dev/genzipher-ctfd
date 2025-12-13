@@ -1,0 +1,33 @@
+<form method="POST" action="{{ request.script_root }}/admin/chal/update" enctype="multipart/form-data">
+	<input type="hidden" name="id" value="{{ challenge.id }}">
+    
+	<div class="form-group">
+		<label>Name</label>
+		<input type="text" class="form-control" name="name" value="{{ challenge.name }}">
+	</div>
+	<div class="form-group">
+		<label>Description</label>
+		<textarea class="form-control" name="description" rows="10">{{ challenge.description }}</textarea>
+	</div>
+    <div class="form-group">
+		<label>Value</label>
+		<input type="number" class="form-control" name="value" value="{{ challenge.value }}">
+	</div>
+
+    <hr>
+    <h4>CP Config</h4>
+    <div class="form-group">
+		<label>Time Limit (seconds)</label>
+		<input type="number" step="0.1" class="form-control" name="time_limit" value="{{ challenge.time_limit }}">
+	</div>
+    <div class="form-group">
+		<label>Test Cases (JSON Array)</label>
+        <small class="form-text text-muted">Format: [{"input": "stdin", "output": "stdout"}]</small>
+		<textarea class="form-control code" name="test_cases" rows="10">{{ challenge.test_cases }}</textarea>
+	</div>
+
+	<div class="form-group">
+		<input type="hidden" value="{{ challenge.type }}" name="type" id="chal-type">
+		<button type="submit" class="btn btn-success btn-outlined float-right">Update</button>
+	</div>
+</form>

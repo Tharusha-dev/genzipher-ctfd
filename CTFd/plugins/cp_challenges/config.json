@@ -1,0 +1,5 @@
+{
+  "name": "CP Challenge",
+  "route": "/admin/plugins/cp_challenges",
+  "version": "1.0.0"
+}
