@@ -58,61 +58,7 @@ services:
     networks:
         internal:
 
-  # --- Judge0 Services ---
-  judge0-server:
-    image: judge0/judge0:1.13.0
-    privileged: true
-    volumes:
-      - ./judge0.conf:/judge0.conf:ro
-    ports:
-      - "2358:2358"
-    environment:
-      - REDIS_PASSWORD=judge0redis
-      - POSTGRES_PASSWORD=judge0db
-      - POSTGRES_USER=judge0
-      - POSTGRES_DB=judge0
-      - POSTGRES_HOST=judge0-db
-      - REDIS_HOST=judge0-redis
-    depends_on:
-      - judge0-db
-      - judge0-redis
-    networks:
-      internal:
 
-  judge0-worker:
-    image: judge0/judge0:1.13.0
-    privileged: true
-    command: ["./scripts/workers"]
-    environment:
-      - REDIS_PASSWORD=judge0redis
-      - POSTGRES_PASSWORD=judge0db
-      - POSTGRES_USER=judge0
-      - POSTGRES_DB=judge0
-      - POSTGRES_HOST=judge0-db
-      - REDIS_HOST=judge0-redis
-    depends_on:
-      - judge0-db
-      - judge0-redis
-    networks:
-      internal:
-
-  judge0-db:
-    image: postgres:13
-    privileged: true
-    environment:
-      - POSTGRES_USER=judge0
-      - POSTGRES_PASSWORD=judge0db
-      - POSTGRES_DB=judge0
-    volumes:
-      - judge0_db_data:/var/lib/postgresql/data
-    networks:
-      internal:
-
-  judge0-redis:
-    image: redis:6.0
-    command: ["bash", "-c", "docker-entrypoint.sh --appendonly yes --requirepass judge0redis"]
-    networks:
-      internal:
 
 networks:
     default:

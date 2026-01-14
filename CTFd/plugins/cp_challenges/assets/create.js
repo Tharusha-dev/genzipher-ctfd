@@ -1,1 +1,0 @@
-console.log("CP Challenges plugin create.js loaded");

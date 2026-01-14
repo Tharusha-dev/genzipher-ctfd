@@ -1,1 +1,0 @@
-console.log("CP Challenges plugin update.js loaded");
