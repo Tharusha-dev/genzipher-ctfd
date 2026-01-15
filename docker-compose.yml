@@ -1,6 +1,6 @@
 services:
   ctfd:
-    image: ghcr.io/yourusername/your-repo-name:prod
+    image: ghcr.io/Tharusha-dev/genzipher-ctfd:prod
     user: root
     restart: always
     ports:
