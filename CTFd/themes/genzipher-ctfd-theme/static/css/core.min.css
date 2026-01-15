@@ -1,0 +1,234 @@
+.jumbotron {
+    color: #F2D8A1;
+    background: transparent !important;
+}
+
+select.form-control {
+    height: auto !important
+}
+
+.custom-select {
+    background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right .75rem center/8px 10px !important
+}
+
+.card {
+    border-radius: 0 !important;
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+#score-graph {
+    min-height: 400px;
+    display: block;
+    clear: both
+}
+
+#solves-graph {
+    display: block;
+    height: 350px
+}
+
+#categories-pie-graph,
+#keys-pie-graph {
+    min-height: 400px;
+    display: block
+}
+
+.form-control {
+    position: relative;
+    display: block;
+    padding: .8em !important;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    color: #D8CDB9 !important;
+    font-weight: 400;
+    font-family: Avenir Next, Helvetica Neue, Helvetica, Arial, sans-serif;
+    -webkit-appearance: none;
+    height: auto !important
+}
+
+/* GenZipher Core Theme */
+
+body {
+    background-color: #140E02;
+}
+
+.jumbotron {
+    background: transparent !important;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+.jumbotron h1 {
+    font-size: 3.5rem;
+    color: #fff;
+    text-shadow: 0 4px 20px #c2b6a200;
+}
+
+/* Graph and Content Cards */
+.card {
+    border-radius: 1rem !important;
+    background-color: rgba(255, 255, 255, 0.03) !important;
+    /* Extremely subtle */
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.card-header {
+    background-color: rgba(0, 0, 0, 0.2) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+    color: #F2D8A1;
+    font-family: 'PT Sans Caption', sans-serif;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+/* Inputs & Forms */
+.form-control {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    color: #D8CDB9 !important;
+    font-family: 'Lato', sans-serif;
+    border-radius: 0.5rem;
+}
+
+.form-control:focus {
+    background: rgba(255, 255, 255, 0.08) !important;
+    border-color: #F2D8A1 !important;
+    box-shadow: none;
+    color: #fff !important;
+}
+
+/* Custom Select Dropdown Arrow Override to match theme */
+.custom-select {
+    background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23F2D8A1' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right .75rem center/8px 10px !important;
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    color: #D8CDB9 !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Scoreboard Graph styles */
+#score-graph,
+#solves-graph,
+#categories-pie-graph {
+    min-height: 400px;
+    display: block;
+    /* Ensure ECharts/Plotly renders text in white */
+    filter: invert(0) hue-rotate(0deg);
+}
+
+/* Nav Tabs (Scoreboard/Users) */
+.nav-tabs {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-tabs .nav-link {
+    border: 1px solid transparent;
+    color: #D8CDB9;
+}
+
+.nav-tabs .nav-link:hover {
+    border-color: transparent;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #140E02 !important;
+    border-color: rgba(255, 255, 255, 0.1) rgba(255, 255, 255, 0.1) #140E02 !important;
+    color: #F2D8A1 !important;
+}
+
+
+/* GenZipher Core Theme */
+
+body {
+    background-color: #140E02;
+}
+
+.jumbotron {
+    background: transparent !important;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+.jumbotron h1 {
+    font-size: 3.5rem;
+    color: #fff;
+    text-shadow: 0 4px 20px #c2b6a200;
+}
+
+/* Graph and Content Cards */
+.card {
+    border-radius: 1rem !important;
+    background-color: rgba(255, 255, 255, 0.03) !important;
+    /* Extremely subtle */
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.card-header {
+    background-color: rgba(0, 0, 0, 0.2) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+    color: #F2D8A1;
+    font-family: 'PT Sans Caption', sans-serif;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+/* Inputs & Forms */
+.form-control {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    color: #D8CDB9 !important;
+    font-family: 'Lato', sans-serif;
+    border-radius: 0.5rem;
+}
+
+.form-control:focus {
+    background: rgba(255, 255, 255, 0.08) !important;
+    border-color: #F2D8A1 !important;
+    box-shadow: none;
+    color: #fff !important;
+}
+
+/* Custom Select Dropdown Arrow Override to match theme */
+.custom-select {
+    background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23F2D8A1' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right .75rem center/8px 10px !important;
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    color: #D8CDB9 !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Scoreboard Graph styles */
+#score-graph,
+#solves-graph,
+#categories-pie-graph {
+    min-height: 400px;
+    display: block;
+    /* Ensure ECharts/Plotly renders text in white */
+    filter: invert(0) hue-rotate(0deg);
+}
+
+/* Nav Tabs (Scoreboard/Users) */
+.nav-tabs {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-tabs .nav-link {
+    border: 1px solid transparent;
+    color: #D8CDB9;
+}
+
+.nav-tabs .nav-link:hover {
+    border-color: transparent;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #140E02 !important;
+    border-color: rgba(255, 255, 255, 0.1) rgba(255, 255, 255, 0.1) #140E02 !important;
+    color: #F2D8A1 !important;
+}
