@@ -1,0 +1,148 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- Custom Landing Wrapper -->
+<div class="landing-wrapper">
+
+    <!-- Rounds Section / Timeline -->
+    <section class="rounds-section" id="timeline">
+        <!-- Background Elements -->
+        <div class="bg-blob blob-1"></div>
+        <div class="bg-blob blob-2"></div>
+
+        <div class="timeline-container">
+
+            <!-- Header -->
+            <div class="timeline-header fade-in-up">
+                <p>The journey</p>
+                <h3>Follow the mythical path<br>to the finale</h3>
+                <div class="text-dim mt-2">
+                    Scroll to drift through each phase or click a card to jump ahead.
+                </div>
+            </div>
+
+            <div class="timeline-track">
+                <div class="timeline-line"></div>
+
+                <!-- ITEM 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-card">
+                            <div class="card-image-wrapper">
+                                <!-- Using relative path for assets if they exist, or fallback -->
+                                <img src="/themes/CTFD-crimson-theme/assets/img/guy1.webp"
+                                    onerror="this.src='https://ui-avatars.com/api/?name=Intro&background=0D8ABC&color=fff&size=500'"
+                                    alt="Introductory Session">
+                                <span class="venue-tag">Online</span>
+                                <div class="card-overlay"></div>
+                            </div>
+                            <div class="card-content">
+                                <div class="meta-row">
+                                    <span class="meta-badge">Dec 20</span>
+                                </div>
+                                <h4 class="card-title">Introductory Session</h4>
+                                <p class="card-desc">
+                                    The GenZipher Introductory Session serves as the gateway to the competition,
+                                    offering participants a clear understanding of the structure, rules, and
+                                    expectations.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-marker-container">
+                        <div class="timeline-marker">
+                            <div class="timeline-dot"></div>
+                        </div>
+                    </div>
+                    <div class="timeline-spacer"></div>
+                </div>
+
+                <!-- ITEM 2 (Right/Reversed) -->
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <div class="timeline-card">
+                            <div class="card-image-wrapper">
+                                <img src="/themes/CTFD-crimson-theme/assets/img/lady1.webp"
+                                    onerror="this.src='https://ui-avatars.com/api/?name=W1&background=random&size=500'"
+                                    alt="Workshop 1">
+                                <span class="venue-tag">Online</span>
+                                <div class="card-overlay"></div>
+                            </div>
+                            <div class="card-content">
+                                <div class="meta-row">
+                                    <span class="meta-badge">Dec 27</span>
+                                </div>
+                                <h4 class="card-title">Workshop 1</h4>
+                                <p class="card-desc">
+                                    A Workshop on CTF fundamentals and advanced techniques.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-marker-container">
+                        <div class="timeline-marker">
+                            <div class="timeline-dot"></div>
+                        </div>
+                    </div>
+                    <div class="timeline-spacer"></div>
+                </div>
+
+                <!-- ITEM 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-card">
+                            <div class="card-image-wrapper">
+                                <img src="/themes/CTFD-crimson-theme/assets/img/lady2.webp"
+                                    onerror="this.src='https://ui-avatars.com/api/?name=W2&background=random&size=500'"
+                                    alt="Workshop 2">
+                                <span class="venue-tag">Online</span>
+                                <div class="card-overlay"></div>
+                            </div>
+                            <div class="card-content">
+                                <div class="meta-row">
+                                    <span class="meta-badge">Jan 2</span>
+                                </div>
+                                <h4 class="card-title">Workshop 2</h4>
+                                <p class="card-desc">
+                                    A Workshop on AI Agents and their role in cybersecurity.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-marker-container">
+                        <div class="timeline-marker">
+                            <div class="timeline-dot"></div>
+                        </div>
+                    </div>
+                    <div class="timeline-spacer"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- University Stats Section -->
+    <section class="stats-section">
+        <div class="stats-container">
+            <div class="stats-header fade-in-up">
+                <h2>Registered Participants Across Universities</h2>
+                <span>Where Are Our Coders From?</span>
+            </div>
+
+            <div id="stats-container" class="fade-in-up">
+                <!-- Loading State -->
+                <div class="text-center text-dim animate-pulse">
+                    Loading Statistics...
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('views.themes', path='js/landing.js') }}"></script>
+{% endblock %}
