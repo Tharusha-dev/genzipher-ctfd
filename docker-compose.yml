@@ -1,6 +1,6 @@
 services:
   ctfd:
-    image: ghcr.io/Tharusha-dev/genzipher-ctfd:prod
+    image: ghcr.io/tharusha-dev/genzipher-ctfd:prod
     user: root
     restart: always
     ports:
