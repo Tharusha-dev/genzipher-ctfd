@@ -11927,6 +11927,11 @@ body {
     background-color: #140E02 !important;
     color: #D8CDB9 !important;
     font-family: 'Lato', sans-serif;
+    height: 100vh;
+    background-image: url("/themes/genzipher-ctfd-theme/static/img/landing.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
 }
 
 h1,
