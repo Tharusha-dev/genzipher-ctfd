@@ -11931,7 +11931,7 @@ body {
     background-image: url("/themes/genzipher-ctfd-theme/static/img/landing.png");
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: contain;
+    background-size: cover;
 }
 
 h1,
